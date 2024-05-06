@@ -266,4 +266,8 @@ class PaginaWebController extends Controller
     {
         return view('landing.invertir');
     }
+    function politicasPrivacidad(){
+        $configuracion = PConfiguracionBasica::find(1);
+        return view('pagina-web.politicas-privacidad',compact('configuracion'));
+    }
 }
