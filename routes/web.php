@@ -32,7 +32,7 @@ Route::post('/generar-cuotas', 'PaginaWebController@generarCuotas');
 Route::post('/cargar-tiempo-pago-por-forma-pago', 'PaginaWebController@cargarTiempoPagoPorFormaPago');
 Route::get('/cargar-simulador-2', 'PaginaWebController@cargarSimulador2');
 
-Route::get('/politicas-privacidad','PaginaWebController@politicasPrivacidad');
+Route::get('/politicas-privacidad','PaginaWebController@politicasPrivacidad')->name('politicas-privacidad');
 
 Route::get('/landing-invertir', 'PaginaWebController@landingInvertir');
 
